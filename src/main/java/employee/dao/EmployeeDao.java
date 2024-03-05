@@ -1,8 +1,8 @@
-package dao;
+package employee.dao;
 
-import entity.Employee;
+import employee.entity.Employee;
 import java.sql.*;
-import datasource.MariaDbConnection;
+import employee.datasource.MariaDbConnection;
 import java.util.*;
 
 public class EmployeeDao {

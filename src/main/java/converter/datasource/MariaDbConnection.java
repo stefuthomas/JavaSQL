@@ -1,11 +1,10 @@
-package datasource;
+package converter.datasource;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class MariaDbConnection {
-
     private static Connection conn = null;
 
     public static Connection getConnection() {
@@ -13,7 +12,7 @@ public class MariaDbConnection {
             // connect if necessary
             try {
                 conn = DriverManager.getConnection(
-                        "jdbc:mariadb://localhost:3306/company?user=appuser&password=password");
+                        "jdbc:mariadb://localhost:3306/converter?user=appuser&password=password");
             } catch (SQLException e) {
                 System.out.println("Connection failed.");
                 e.printStackTrace();

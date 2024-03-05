@@ -1,7 +1,7 @@
-package application;
+package employee.application;
 
-import entity.*;
-import dao.*;
+import employee.entity.*;
+import employee.dao.*;
 import java.util.*;
 
 public class CompanyApp {
@@ -20,6 +20,6 @@ public class CompanyApp {
 
         empdao.persist(new Employee("Viivi", "Puro", "viivip@mymail.fi", 8300.00));
 
-        datasource.MariaDbConnection.terminate();
+        employee.datasource.MariaDbConnection.terminate();
     }
 }
