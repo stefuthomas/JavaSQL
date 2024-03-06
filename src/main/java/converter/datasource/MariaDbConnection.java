@@ -8,20 +8,15 @@ public class MariaDbConnection {
     private static Connection conn = null;
 
     public static Connection getConnection() {
-        if (conn==null) {
-            // connect if necessary
-            try {
+        try {
+            if (conn == null || conn.isClosed()) {
                 conn = DriverManager.getConnection(
                         "jdbc:mariadb://localhost:3306/converter?user=appuser&password=password");
-            } catch (SQLException e) {
-                System.out.println("Connection failed.");
-                e.printStackTrace();
             }
-            return conn;
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        else {
-            return conn;
-        }
+        return conn;
     }
 
     public static void terminate() {
