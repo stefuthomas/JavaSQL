@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b43edbd-7237-4af7-a5b2-52cc9656722d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/converter/application/ConverterApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/converter/dao/CurrencyDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/converter/datasource/MariaDbConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/converter/entity/Converter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/converter/view/ConverterGUI.java" afterDir="false" />
+    <list default="true" id="6b43edbd-7237-4af7-a5b2-52cc9656722d" name="Changes" comment="initial commit for the CurrencyConverter application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/CompanyApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employee/application/CompanyApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employee/dao/EmployeeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/datasource/MariaDbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employee/datasource/MariaDbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/employee/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/converter/controller/ConverterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/converter/controller/ConverterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/converter/datasource/MariaDbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/converter/datasource/MariaDbConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +38,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.CompanyApp.executor": "Run",
+    "Application.ConverterController.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -69,7 +60,7 @@
       <recent name="C:\Users\stefu\IdeaProjects\JavaSQL\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ConverterController">
     <configuration name="CompanyApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="employee.application.CompanyApp" />
       <module name="JavaSQL" />
@@ -83,8 +74,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConverterController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="converter.controller.ConverterController" />
+      <module name="JavaSQL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="converter.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConverterController" />
         <item itemvalue="Application.CompanyApp" />
       </list>
     </recent_temporary>
@@ -115,10 +120,24 @@
       <workItem from="1709658083424" duration="33000" />
       <workItem from="1709658127194" duration="49000" />
       <workItem from="1709658182417" duration="808000" />
+      <workItem from="1709659002089" duration="63000" />
+      <workItem from="1709743420167" duration="270000" />
     </task>
+    <task id="LOCAL−00001" summary="initial commit for the CurrencyConverter application">
+      <option name="closed" value="true" />
+      <created>1709659056191</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1709659056191</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit for the CurrencyConverter application" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit for the CurrencyConverter application" />
   </component>
 </project>

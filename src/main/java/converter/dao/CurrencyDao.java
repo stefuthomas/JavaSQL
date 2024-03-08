@@ -9,11 +9,11 @@ public class CurrencyDao {
     public List<String> getCurrencyNames() {
         List<String> currencies = new ArrayList<>();
         try (Connection conn = MariaDbConnection.getConnection()) {
-            String sql = "SELECT abbrevation FROM currency";
+            String sql = "SELECT abbreviation FROM currency";
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
-                currencies.add(rs.getString("abbrevation"));
+                currencies.add(rs.getString("abbreviation"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -22,7 +22,7 @@ public class CurrencyDao {
     }
 
     public Double getRate(String currency) {
-        String sql = "SELECT conversion_rate FROM currency WHERE abbrevation = ?";
+        String sql = "SELECT conversion_rate FROM currency WHERE abbreviation = ?";
         Double rate = null;
 
         try (Connection conn = MariaDbConnection.getConnection();

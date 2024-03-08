@@ -27,5 +27,4 @@ public class ConverterController {
     public static void main(String[] args) {
         ConverterGUI.launch(ConverterGUI.class);
     }
-
 }
